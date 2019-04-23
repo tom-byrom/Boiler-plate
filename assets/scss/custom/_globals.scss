@@ -1,0 +1,273 @@
+// Global styles .scss
+
+
+// Layout / Spacing
+
+
+
+html {
+  overflow-x: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-end {
+  display: flex;
+  align-items: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.marg-top-30 {
+  margin-top: 30px;
+}
+
+.marg-btm-30 {
+  margin-bottom: 30px;
+}
+
+
+.pad_top_bottom_lg {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.pad_top_bottom_sm {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.pad_top_bottom_xs {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.float-right {
+  float: right;
+}
+
+
+.mob-full {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.padding30 {
+  padding: 30px;
+}
+
+
+// Styles
+
+a {
+  transition: $transition-base;
+}
+
+img {color:#fff}
+:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+
+ol, ul, dl {
+  list-style: square;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: $font-size-base;
+}
+
+
+.whitetext  {
+  color: $white;
+}
+
+
+
+// Section Backgrounds
+
+.greenbg {
+  background-color: $green !important;
+  color: $white;
+}
+
+.greenbg .introtext {
+  color: $white;
+}
+
+.thumb-img {
+background-image: url(/assets/images/backgrounds/trans-thumb.png);
+background-repeat: no-repeat;
+background-position: right;
+}
+// Typography
+
+.introtext {
+  margin: 20px 0 30px;
+  @include largertext()
+}
+
+// Buttons  
+
+.btn {
+  font-weight: $medweight;
+}
+
+.btn-outline {
+  color: $green;
+  background: none;
+  border: 2px solid $green;
+
+}
+
+.btn-outline:hover {
+  color: $white;
+  background: $green;
+}
+
+
+.btn-outline-white {
+  color: $white;
+  background: none;
+  border: 2px solid $white;
+
+}
+
+.btn-outline-white:hover {
+  color: $green;
+  background: $white;
+}
+
+
+.btn-email:before {
+  font-family: "sedgemoor";
+  content: "\e696";
+  margin-right: 8px;
+}
+
+
+.btn-return:before {
+  font-family: "sedgemoor";
+  content: "\e949";
+  margin-right: 8px;
+}
+
+
+.btn-mustard {
+  background: $mustard;
+  color: $green;
+  border: none;
+}
+
+.btn-mustard:hover {
+  background: darken($mustard, 5%);
+  color: $green;
+  border: none;
+}
+
+
+
+// Forms
+
+.form-control {
+  padding: $input-padding-y 10px;
+}
+
+.form-control-grey {
+  background-color: $grey;
+}
+
+
+.form-control-grey:focus {
+  box-shadow: none;
+  background-color: $grey;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+// Global mobile .scss
+
+@media (min-width: 0px) and (max-width: 991px) {
+  .marg-btm-30-mob {
+    margin-bottom: 30px;
+  }
+
+  .marg-btm-15-mob {
+    margin-bottom: 15px;
+  }
+
+  .introtext {
+  @include largertext-mob
+}
+
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+
+  .pad_top_bottom_lg {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .pad_top_bottom_sm {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .pad_top_bottom_xs {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .justify-center {
+    justify-content: unset;
+}
+  
+
+  .swipe {
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+  }
+
+  .swipe-wrap {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .swipe-wrap>div {
+    float: left;
+    width: 60%;
+    position: relative;
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+  }
+
+  .column-reverse {
+    flex-direction: column-reverse;;
+  }
+
+  .block-mob {
+    display: block;
+  }
+  
+}

@@ -1,0 +1,104 @@
+// Slick slider overrides .scss //
+
+$slick-font-path: "/assets/fonts/slick/";
+
+
+// Boostrap overrides .scss //
+
+// Grid
+$grid-breakpoints: (
+xs: 0,
+sm: 576px,
+md: 768px,
+lg: 992px,
+xl: 1200px,
+xxl: 1367px
+);
+
+$container-max-widths: (
+sm: 540px,
+md: 720px,
+lg: 960px,
+xl: 1140px,
+xxl: 1210px
+);
+
+$grid-gutter-width: 30px;
+
+
+// Colors
+$white: #ffffff;
+$green: #3A545A;
+$darkgreen: #31464B;
+$mustard: #FFB405;
+$darkblue: #182326;
+$darkgrey: #757575;
+$grey: #ECECEC;
+$lightgrey:#F9F9F9;
+$red: #EB0000;
+
+
+$primary: $green !default;
+$secondary: $mustard !default;
+
+
+// Links
+$link-color: $secondary;
+$link-decoration: none;
+$link-hover-color: darken($link-color, 5%);
+$link-hover-decoration: none;
+
+
+// Buttons
+
+$input-btn-border-width: 0;
+$btn-focus-width:        0;
+$btn-focus-box-shadow:   0;
+
+
+$input-btn-padding-x:  3rem;
+$input-btn-padding-y:  .5rem;
+
+
+// Fonts
+$headings-font-family: bebas-neue,sans-serif;
+$font-family-sans-serif: acumin-pro,sans-serif;
+$headings-margin-bottom: 0.75rem;
+
+$medweight:   500;
+
+$font-size-base:              1rem; // Assumes the browser default, typically `16px`
+
+$h1-font-size:                $font-size-base * 3;
+$h2-font-size:                $font-size-base * 2.25;
+$h3-font-size:                $font-size-base * 1.75;
+$h4-font-size:                $font-size-base * 1.375;
+$h5-font-size:                $font-size-base * 1.25;
+$h6-font-size:                $font-size-base;
+
+
+// Navbar
+$navbar-dark-color: $white;
+$navbar-dark-hover-color: rgba($white, .75);
+$navbar-dark-active-color: $mustard;
+
+$navbar-nav-link-padding-x: 1.5rem;
+
+
+// Custom Variables .scss //
+
+$border-radius: 3px;
+$box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+$transition: .3s ease;
+$border-grey: 2px solid $grey;
+
+// Slick
+
+$slick-font-path: "/assets/fonts/icons/";
+$slick-loader-path: "/assets/images/slick/";
+
+$slick-dot-color: $mustard;
+
+$slick-font-family: 'sedgemoor' !important;
+$slick-prev-character: "\e93b";
+$slick-next-character: "\e93c";

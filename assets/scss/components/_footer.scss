@@ -1,0 +1,80 @@
+// Footer .scss
+
+.back_to_top {
+    background: white;
+    position: relative;
+}
+
+footer {
+    background-color: darken($primary, 10%);
+    color: $white;
+}
+
+// footer {
+//     background-color:#e4e4e4;
+//     color: black;
+//     position: fixed;
+//     bottom: 0;
+//     left: 0;
+//     width: 100%;
+//     z-index: -1;
+// }
+
+
+footer a {
+    color: black !important;
+}
+
+footer .contact_info a {
+    text-decoration: none;
+}
+
+footer h5 {
+    color: $white;
+}
+
+
+.footer_links a {
+    margin-right: 15px;
+}
+
+
+footer h3 {
+    // font-size: 13px;
+    // text-transform: uppercase;
+    font-weight: 600;
+    // letter-spacing: .15em;
+}
+
+
+
+
+/*---footer--*/
+footer{
+    position: relative;
+    background-color:#e4e4e4;
+    color: black;
+}
+.footer-logo{
+    max-width: 132px;
+}
+.social-link{
+    display: block;
+    height: 32px;
+    vertical-align: center;
+    width: 32px;
+    text-align: center;
+    color: $primary !important;
+    border-radius: 3px;
+    margin: 0px 4px;
+    font-size: 1.6em;
+    line-height: 1.2em;
+    transition: all 0.4s ease;
+}
+.social-link:hover{
+    color: $primary;
+    transform: scale(1.1);
+}
+.footer .studio{
+    font-size: 12px;
+}

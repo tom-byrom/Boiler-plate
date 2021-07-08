@@ -1,0 +1,13 @@
+.overlay_bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid grey;
+    padding: .5rem 0;
+    z-index: 200;
+    background: $white;
+}

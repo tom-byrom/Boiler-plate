@@ -1,0 +1,146 @@
+.people_nav {
+    left: -42px;
+    transform-origin: top;
+}
+
+.people_img {
+    height: 340px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-bottom: 1px solid $secondary;
+}
+
+h4.people_position {
+    font-size: 1rem;
+    text-transform: capitalize !important;
+    font-weight: 500;
+}
+
+
+
+img.people_img_big {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+h2.person_position:before {
+    content: url(/images/lawray-block.svg);
+    margin-right: .5rem;
+}
+
+.recent_projects h4 {
+    font-size: .875rem;
+}
+
+
+
+// Peerson content
+
+#entryContent {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    z-index: -1;
+    transition: .4s ease;
+    background: #2e2e2ed6;
+}
+
+#entryWrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999999999999999999999;
+    transition: .4s ease;
+    transform: translateX(25%);
+    background-color: #fff;
+    max-width: 100%;
+    min-height: 100%;
+    width: 90%;
+}
+
+.entry-loaded-header {
+    position: relative;
+    width: 100%;
+    height: 4.5rem;
+    background: white;
+    z-index: 10;
+}
+
+#closeEntry {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+#entryLoaded {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background: white;
+}
+
+
+.cover_img_wrap {
+    width: 100%;
+    max-width: 100%;
+    height: 45vh;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#entryContent::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+
+@media (min-width: 0px) and (max-width: 991px) {
+
+    #entryWrapper {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 0px) {
+
+}
+
+
+@media (min-width: 992px) {
+    #entryWrapper {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    #entryWrapper {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 1400px) {
+    #entryWrapper {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 1600px) {
+    #entryWrapper {
+        width: 90%;
+    }
+
+}

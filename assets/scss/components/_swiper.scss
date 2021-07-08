@@ -1,0 +1,87 @@
+.swiper-pagination-bullet-active {
+    background: $themeColor;
+}
+
+.testimonial_slide .container {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+.swiper-container {
+    width: 100%;
+    height: calc(100 * var(--vh) - 5rem);;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .gallery-top {
+    height: 100%;
+    width: 100%;
+  }
+
+  .gallery-thumbs {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+  }
+
+  .gallery-thumbs .swiper-slide {
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  .gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+
+
+  .gallery-img-thumb {
+      height: 100%;
+      object-fit: cover;
+  }
+
+  img.gallery-img {
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
+}
+
+
+.arrows_wrap {
+    // background: white;
+    height: 4rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 6rem;
+    z-index: 5;
+}
+
+
+.swiper-container-vertical>.swiper-scrollbar {
+    position: absolute;
+    right: unset;
+    left: 3px;
+    top: 1%;
+    z-index: 50;
+    width: 5px;
+    height: 98%;
+}
+
+
+.other_navigation {
+  position: relative;
+  display: block;
+  width: 5rem;
+  height: 2rem;
+}

@@ -1,0 +1,101 @@
+
+// Buttons
+
+.btn {
+    text-decoration: none;
+    border-radius: 5rem;
+  }
+
+  .btn:hover {
+    text-decoration: none;
+  }
+  
+  .btn-primary {
+    color: $white;
+    background: $primary;
+    border: 1px solid $primary;
+    transition: $transition-base;
+  }
+  
+  .btn-primary:hover {
+    color: $primary;
+    background: none;
+  }
+  
+  
+  .btn-outline {
+    color: $primary;
+    background: none;
+    border: 1px solid $primary;
+    transition: $transition-base;
+  }
+ 
+  
+  .btn-outline:hover {
+    color: $white;
+    background: $primary;
+  }
+  
+  .btn-outline-white {
+    color: $white;
+    background: none;
+    border: 1px solid $white;
+  }
+  
+  .btn-outline-white:hover {
+    color: $primary;
+    background: $white;
+  }
+  
+  .btn-outline-primary {
+    color: $primary;
+    background: none;
+    border: 1px solid $primary;
+  }
+  
+  .btn-outline-primary:hover {
+    background: $primary;
+    text-decoration: none !important;
+    color: $secondary;
+  }
+
+  .btn-pill-disabled {
+   border: 1px solid $darkgrey;
+  }
+
+  .nav-btn {
+    text-decoration: none !important;
+  }
+  
+  .btn-email:before {
+    font-family: "sedgemoor";
+    content: "\e696";
+    margin-right: 8px;
+  }
+  
+  .btn-return:before {
+    font-family: "sedgemoor";
+    content: "\e949";
+    margin-right: 8px;
+  }
+
+
+.btn-sml {
+    padding: .4rem 2rem;
+    font-size: 0.875rem;
+}
+
+
+#followBtn {
+  width: auto;
+}
+
+
+@media (min-width: 0px) and (max-width: 991px) {
+
+.btn-pill-disabled {
+  display: inline-block;
+  width: unset;
+}
+
+}

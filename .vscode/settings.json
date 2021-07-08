@@ -1,4 +1,36 @@
 {
+
+
+    "auto-close-tag.activationOnLanguage": [
+            "xml",
+            "php",
+            "blade",
+            "ejs",
+            "jinja",
+            "javascript",
+            "javascriptreact",
+            "typescript",
+            "typescriptreact",
+            "plaintext",
+            "markdown",
+            "vue",
+            "liquid",
+            "erb",
+            "lang-cfml",
+            "cfml",
+            "HTML (Eex)",
+            "HTML (Twig)",
+            "twig",
+        ]
+    ,
+
+
+    "files.associations": {
+        "*.html": "twig"
+    },
+    "emmet.includeLanguages": {
+        "twig": "html"
+    },
     "liveSassCompile.settings.formats":[
        {
            "format": "expanded",
@@ -14,9 +46,8 @@
    "liveSassCompile.settings.excludeList": [
       "**/node_modules/**",
       "/.vscode/**",
-      "**",
-      "/bootstrap-4.3.1/**",
-      "/assets/css/custom_scss/**",
+      "/assets/scss/vendor/swiper/**"
+
 
    ],
    "liveSassCompile.settings.generateMap": true,

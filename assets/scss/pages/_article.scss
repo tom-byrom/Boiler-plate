@@ -1,0 +1,9 @@
+blockquote {
+    padding-left: 1rem;
+    border-left: 2px solid #8dc740;
+}
+
+img.article_img {
+    height: calc(100 * var(--vh) - 5rem);
+    object-fit: cover;
+}

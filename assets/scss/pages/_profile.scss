@@ -1,0 +1,85 @@
+.profile_info {
+    width: 100%;
+}
+
+
+
+// Entries Table
+
+.td_entry_card_img_wrap {
+    width: 5rem;
+    height: 1.6rem;
+    background-color: #DBDBDB;
+}
+
+.td_entry_card_img {
+    width: 5rem;
+    height: 1.6rem;
+    object-fit: cover;
+    display: block;
+}
+
+.w_16 {
+    width: 7.666667%;
+}
+
+.w_16_mob {
+    min-width: 8rem;
+}
+
+.w_33 {
+    width: 33.33333333333333%;
+    min-width: 11rem;
+}
+
+
+a.page-link.disabled {
+    opacity: 0.5;
+}
+
+a.page-link {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a.page-link-icon {
+    line-height: 2rem;
+}
+
+a.page-link.disabled {
+   cursor: context-menu;
+}
+
+a.page-link.disabled:hover {
+    background-color: unset;
+}
+
+.pagination_meta {
+    font-size: $h5-font-size;
+    color: $darkgrey;
+}
+
+.table_noline a {
+    text-decoration: none;
+}
+
+@mixin entry_status {
+    border-radius: 50px;
+    width: 4rem;
+    display: inline-block;
+    text-align: center;
+  }
+
+.live_entry {
+    background: #e7f3de;
+    color: #4f743e;
+    @include entry_status;
+}
+
+.disabled_entry {
+    background: #f9d3da;
+    color: #b51761;
+    @include entry_status;
+}
+
+

@@ -1,0 +1,6 @@
+// CSS Grid layouts
+
+.grid-1-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}

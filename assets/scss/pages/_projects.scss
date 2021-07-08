@@ -1,0 +1,247 @@
+
+article{
+    flex: 1;
+    // overflow:hidden;
+    position: relative;
+}
+article .drawer {
+    // position: absolute;
+    // top: 100%;
+    // bottom: -100%;
+    // left: 0%;
+    // right: 0%;
+    transition: all 0.4s ease;
+    position: relative;
+}
+// article .drawer.open{
+//     top: 0%;
+//     bottom: 0%;
+// }
+// .drawer-handle{
+//     position: absolute;
+//     bottom: 100%;
+//     z-index: 99;
+// }
+// .open-drawer{
+//     cursor:pointer;
+// }
+
+
+main {
+    position: relative;
+    background: white;
+}
+
+
+.invisibleSpace {
+    height: 100vh;
+    z-index: -1;
+}
+
+
+.header-anchor {
+    position: relative;
+    z-index: 5;
+    margin-top: -264px;
+    padding-bottom: 106px;
+    padding-top: 2rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .75) 0%, rgba(0,0,0,0) 100%);
+    display: block;
+    width: 100%;
+}
+
+.anchor-icon {
+    text-align: center;
+    display: block;
+    color: white;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+h1.carouselHeading, .carouselHeading.h1,  p.carouselHeading, .carouselHeading.p  {
+    color: white;
+    // text-transform: uppercase;
+    // letter-spacing: 0.05em;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.drawer .drawer-content{
+    width: 100%;
+    // height: 100%;
+    // overflow-x: hidden;
+    // overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+}
+.drawer .theme-bg{
+    // background-color: var(--beige);
+    flex-grow: 1;
+}
+.cat {
+    min-height: 200px;
+}
+
+.cat img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.res_cat_container {
+    max-height: 800px;
+}
+
+.res_student_container {
+    max-height: 400px;
+}
+
+.cat_half, .cat_full {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    background: rgb(66,65,64);
+    background: linear-gradient(45deg, rgba(66,65,64,1) 0%, rgba(122,122,122,1) 69%, rgba(101,99,97,1) 100%);
+}
+
+.cat_half {
+    height: calc(50% - 1rem);
+    position: relative;
+    display: block;
+}
+
+.cat_full {
+    height: 100%;
+}
+
+.cat_half img, .cat_full img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    transition: 1s ease;
+}
+
+
+.cat_half:hover img, .cat_full:hover img {
+    transform: scale(1.1);
+    opacity: 0.4;
+}
+
+#projectsCat {
+    .cat_full:hover .cat_h3, .cat_half:hover .cat_h3 {
+    opacity: 1;
+}
+}
+
+#projectsInd {
+    .cat_full:hover .cat_h3, .cat_half:hover .cat_h3 {
+    opacity: 1;
+}
+}
+
+
+img.project_main_img {
+    height: 16rem;
+}
+
+#projectsCat .cat_h3, #projectsInd .cat_h3 {
+        opacity: 0;
+        transition: opacity 1s ease;
+    }
+
+
+.cat_h3 {
+    position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    bottom: 0;
+    left: 0;
+    font-size: 1.2rem;
+    padding: .75rem 1rem;
+    // background: rgba(255, 255, 255, .75);
+    // background: rgb(255, 255, 255);
+    // letter-spacing:  .04em;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #ffffff;
+    margin-right: -1rem;
+}
+
+
+
+// .cat_h3 {
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     font-size: 1.25rem;
+//     padding: .75rem 1rem;
+//     background: #fff;
+//     text-align: center;
+//     font-weight: 600;
+//     margin-bottom: 0;
+//     background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #8ec641 50%);
+//     background-position: -0% 0;
+//     background-size: 200% auto;
+//     transition: background-position 0.4s ease-out;
+// }
+
+// .res_cat_container:hover > .cat_h3, .cat_half:hover > .cat_h3, .cat_full:hover > .cat_h3 {
+//     background-position: -100% 0;
+// }
+
+.cat_featured {
+    height: 50vh;
+}
+
+
+
+.project_location {
+    // letter-spacing: .15em;
+    font-weight: 600;
+    // text-transform: uppercase;
+}
+
+
+@media (min-width: 0px) and (max-width: 575px) {
+    .cat_half, .cat_full {
+        height: 200px !important
+    }
+
+    .cat_featured {
+        height: unset;
+    }
+
+}
+
+
+@media (min-width: 0px) {
+
+
+}
+
+
+@media (min-width: 992px) {
+
+}
+
+
+@media (min-width: 1200px) {
+
+}
+
+
+@media (min-width: 1400px) {
+
+
+}
+
+@media (min-width: 1600px) {
+
+}

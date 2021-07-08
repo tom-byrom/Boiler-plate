@@ -1,0 +1,158 @@
+// Log in form
+
+.login_form {    
+    width: 26rem;
+    max-width: 100%;
+}
+
+
+// Search
+
+.form-select-search {
+    height: unset;
+    min-height: $input-height;
+}
+
+
+.input-group>#searchForm {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+}
+
+// Entry Form Elements
+
+
+.form-control {
+    border: 1px solid $grey;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.quote_form {
+    background: $secondary;
+    padding: 30px;
+    border-radius: $border-radius-lg;
+}
+
+.form-group label {
+    font-family: $headings-font-family;
+    font-size: $h3-font-size;
+    font-weight: $boldweight;
+    margin-bottom: 0.5rem;
+}
+
+.form-group label.remember_me {
+    font-size: 1rem;
+}
+
+
+/*inputimgInp {
+    position: absolute;
+    width: 247px;
+    bottom: 0;
+    right: 0;
+}*/
+
+.s-p_input {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 250;
+}
+
+.form-input-delete {
+    background: none;
+    border: none;
+    display: block;
+    color: #dc3b2f;
+}
+
+
+// Filepond
+.filepond--root {
+    font-family: inherit!important;
+}
+
+.filepond label {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+
+#coverInput { 
+
+}
+
+.cover_preview {
+    height: 4.5rem;
+    background-color: #f1f0ef;
+    border-radius: 0.5em;
+}
+
+
+// Redactor
+.redactor-box  {
+    border: 1px solid $grey;
+    padding: 1rem;
+    min-height: 12rem;
+    color: $input-color;
+    @include transition($input-transition);
+}
+
+.redactor-toolbar-wrapper {
+    margin-bottom: 1rem;
+}
+
+.redactor-focus {
+    border-color: $primary;
+}
+
+// Tagify
+
+.hidden {
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+    font-size: 0.875rem
+    }
+
+.showtext {
+    display: inline-block;
+    opacity: 1;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.tagify {
+    --tags-focus-border-color: $primary;
+   
+  }
+
+.tagify__tag {
+    margin: 0.5rem 0 0.5rem 0.625rem;
+}
+
+.tagify--outside{
+    border: 0;
+}
+
+.tagify--outside .tagify__input{
+  order: 1;
+  flex: 100%;
+  border: 1px solid var(--tags-border-color);
+  margin: 0;
+  margin-top: 1em;
+  @include transition($input-transition);
+  padding: $input-padding-y 0.625rem;
+  line-height: 1.7;
+
+}
+
+.tagify--outside .tagify__input:hover{ border-color:var(--tags-hover-border-color); }
+.tagify--outside.tagify--focus .tagify__input{
+  transition:0s;
+  border-color: var(--tags-focus-border-color);
+}

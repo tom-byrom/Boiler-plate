@@ -1,0 +1,152 @@
+.gallery_wrap {
+    height: calc(100 * var(--vh) - 5rem)
+}
+
+
+
+// Project page specific .scss
+
+main.project {
+    background-color: $white;
+}
+
+#entry .entry_card_inner {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+// Image with Blur up
+
+
+.cover_img_wrap {
+    width: 100%;
+    max-width: 100%;
+    height: 45vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.cover_img_container {
+    position: relative;
+    display: block;
+    height: 0;
+    width: 100%;
+    padding-bottom: 66.6667%;
+}
+
+.cover_img.ls-blur-up-is-loading,
+	.cover_img.lazyload:not([src]) {
+		visibility: hidden;
+	}
+
+
+.ls-blur-up-img,
+.cover_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45vh;
+    display: block;
+    object-fit: cover;
+    // font-family: "blur-up: auto", "object-fit: cover";
+}
+
+
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+figcaption {
+    color: $darkgrey;
+    font-size: .875rem;
+    font-family: "Roboto Mono",monospace;
+}
+
+
+
+.iframeVideo {
+    position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.iframeVideo iframe, .iframeWrap object, .iframeWrap embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+
+
+
+
+
+
+// Redactor Entry
+
+@media (min-width: 1200px) {
+
+    .project_content, .entry_dummy {
+        padding: 0 6.25rem;
+    }
+
+    .entry_content .imgWrap, .entry_content .iframeVideo, .entry_dummy_img {
+        margin: 2rem -5.25rem;
+    }
+
+    .iframeVideo {
+        padding-bottom: 66.14%;
+    }
+
+    #contentBody img {
+        width: 100%;
+    }
+
+    figcaption {
+        margin-top: -2rem;
+        margin-bottom: 2rem;
+    }
+
+    .entry_content .portraitImg {
+        margin: 2rem 0rem;
+    }
+
+}
+
+@media (min-width: 1367px) {
+
+    .project_content, .entry_dummy {
+        padding: 0 10rem;
+    }
+
+    .entry_content .imgWrap, .entry_content .iframeVideo, .entry_dummy_img {
+        margin: 2rem -9rem;
+    }
+
+    .entry_content .portraitImg {
+        margin: 2rem 0rem;
+    }
+    
+    #contentBody img {
+        width: 100%;
+    }
+
+    figcaption {
+        margin-top: -2rem;
+        margin-bottom: 2rem;
+    }
+
+    .iframeVideo {
+        padding-bottom: 76.35%;
+    }
+
+}
+
+.entryBody  h2,
+.entryBody  h3,
+.entryBody h4,
+.entryBody h5 {
+    margin-top: 2rem;
+}
+

@@ -1,0 +1,45 @@
+@mixin fullwidth-container-bg {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  @mixin cta-icon {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+
+
+  @mixin boxstyles {
+    background: $white;
+    border: 2px solid $grey;
+    border-radius: $border-radius;
+    overflow: hidden;
+    transition: $transition-base;
+  }
+
+
+  @mixin largertext {
+    font-size: $large-text;
+    line-height: ($line-height-base * $large-text); 
+    font-weight: $medweight;
+  }
+
+  @mixin largertext-mob {
+    font-size: 18px;
+    line-height: 26px; 
+  }
+
+
+  @mixin titleline {
+    width: 51px;
+    display: inline-block;
+    margin: 10px 0;
+  }
+
+
+  @mixin m-r--5 {
+    margin-right: .5rem;
+  }

@@ -1,0 +1,158 @@
+// Slick slider overrides .scss //
+
+$slick-font-path: "/assets/fonts/slick/";
+
+
+// Boostrap overrides .scss //
+
+// Grid
+$grid-breakpoints: (
+xs: 0,
+sm: 576px,
+md: 768px,
+lg: 992px,
+xl: 1200px,
+xxl: 1400px,
+xxxl: 1600px
+);
+
+$container-max-widths: (
+sm: 540px,
+md: 720px,
+lg: 960px,
+xl: 1168px,
+xxl: 1300px,
+xxxl: 1500px
+);
+
+$grid-gutter-width: 2rem;
+
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  0_25: $spacer / 4,
+  0_5: $spacer / 2,
+  1: $spacer,
+  1_5: $spacer * 1.5,
+  2: $spacer * 2,
+  3: $spacer * 3,
+  4: $spacer * 4,
+  5: $spacer * 5,
+  6: $spacer * 6,
+  7: $spacer * 7,
+  8: $spacer * 8,
+) !default;
+
+
+
+// Colors
+$white: #ffffff;
+$brand-grey: #5b7287;
+$brand-red: #d50606;
+$darkgrey: #505050;
+$grey: #e9e9e9;
+$lightgrey:#EEF1F3;
+$yellow: #FFD800;
+$menubgcolor: #F6F6F6;
+$primary: #3f3f3f !default;
+$secondary: rgb(142,198,65) !default;
+$body-color: #3f3f3f !default;
+
+
+
+// Links
+$link-color: $primary;
+$link-decoration: underline;
+$link-hover-color: darken($link-color, 5%);
+$link-hover-decoration: none;
+
+
+// Fonts
+$headings-font-family: 'Inter', sans-serif;
+$font-family-sans-serif: 'Inter', sans-serif;
+$secondary-font-family: 'Roboto Mono', monospace;
+$headings-margin-bottom: 1.5rem;
+$paragraph-margin-bottom: 1rem;
+$headings-color: $primary;
+$line-height-base: 1.7;
+
+$letter-spacing-tight: -0.03rem;
+
+$headings-font-weight: 600;
+
+$medweight:   500;
+$boldweight:   700;
+
+$font-size-base:              1rem; // Assumes the browser default, typically `16px`
+
+$h1-font-size:                $font-size-base * 5.5;
+$h2-font-size:                $font-size-base * 1.5;
+$h3-font-size:                $font-size-base * 1.25;
+$h4-font-size:                $font-size-base * 1;
+$h5-font-size:                $font-size-base * 0.875;
+$h6-font-size:                $font-size-base * 0.875;
+
+$large-text: 1.125rem;
+
+$text-sm: 0.875rem;
+
+
+// Buttons
+$btn-font-family: $headings-font-family; 
+$input-btn-border-width: 0;
+$btn-focus-width:        0;
+$btn-focus-box-shadow:   0;
+$btn-border-radius: 5rem;
+
+$btn-border-radius-sm: 1rem;
+$btn-padding-x-sm: 0.75rem;         
+
+
+$input-btn-padding-x:  2.5rem;
+$input-btn-padding-y:  .5rem;
+
+
+
+// Navbar
+$navbar-dark-color: $primary;
+$navbar-dark-hover-color: $secondary;
+$navbar-dark-active-color: $secondary;
+
+$navbar-nav-link-padding-x: 1.5rem;
+
+$dropdown-item-padding-y:           .35rem !default;
+$dropdown-item-padding-x:           1.5rem !default;
+
+//Breadcrumbs
+
+$breadcrumb-bg: white;
+$breadcrumb-font-size: .875rem;
+$breadcrumb-divider-color: $secondary;
+
+// Forms
+
+$form-select-bg-position:           right 1rem center !default;
+
+
+// Custom Variables .scss //
+
+$border-radius: 0px;
+$border-radius-lg: 10px;
+$box-shadow-small: 0px 3px 5px rgba(0,0,0,0.15);
+$box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+$transition: .3s ease;
+$border-grey: 2px solid $grey;
+
+
+
+// Slick
+
+$slick-font-path: "/assets/fonts/icons/";
+$slick-loader-path: "/assets/images/slick/";
+
+$slick-dot-color: $secondary;
+
+$slick-font-family: 'linearicons' !important;
+$slick-prev-character: "\e93b";
+$slick-next-character: "\e93c";

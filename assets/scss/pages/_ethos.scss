@@ -1,0 +1,75 @@
+.rellax {
+    transition: transform 10s cubic-bezier(0,1,.5,1);
+}
+
+.top_heading {
+    margin-top: -10rem;
+}
+
+.ethos_nav {
+    left: -195px;
+}
+
+@media (min-width: 0px) and (max-width: 991px) {
+    .rellax {
+        transform: translate3d(0px, 0px, 0px) !important;
+    }
+}
+
+
+@media (min-width: 0px) {
+    .ethos_h2 {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .top_heading {
+        margin-top: 0rem;
+    }
+
+}
+
+
+@media (min-width: 992px) {
+
+    img.ethos_hero_img {
+        height: calc(100vh - 5rem);
+        object-fit: cover;
+        width: 110%;
+        max-width: 110%;
+        margin-top: -5rem;
+        margin-left: 5vw;
+    }
+
+    img.ethos_img_sml {
+        margin-top: -20vw;
+        width: 33vw;
+        height: 22vw;
+        object-fit: cover;
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+    .ethos_h2 {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+}
+
+
+@media (min-width: 1400px) {
+    .ethos_h2 {
+        font-size: 3rem;
+        font-weight: 400;
+    }
+
+}
+
+@media (min-width: 1600px) {
+    img.ethos_hero_img {
+        width: 140%;
+        max-width: 140%;
+    }
+}

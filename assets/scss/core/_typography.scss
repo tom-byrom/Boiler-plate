@@ -1,0 +1,79 @@
+/*---text---*/
+h1, .h1 {
+    font-weight: 600;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    // text-transform: uppercase;
+    letter-spacing: -0.03em;
+}
+
+
+
+h1.cat_h1 {
+    // letter-spacing:  .04em;
+    font-weight: 600;
+}
+
+
+h3{
+    // font-size: 18px;
+    // letter-spacing: .04em;
+}
+
+
+.has-shadow {
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+.box-shadow{
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+.box-shadow.inset{
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5) ;
+}
+// article h1{
+//     text-align: center;
+//     // text-transform: uppercase;
+//     font-weight: normal;
+//     font-size: 32px;
+//     margin: 0.8em 0;
+// }
+
+
+
+@media (max-width: 1199px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1599px) {
+h1, .h1 {
+    font-size: 3.75rem;
+}
+}
+
+
+@media (min-width: 0px) {
+
+}
+
+
+@media (min-width: 992px) {
+
+}
+
+
+
+@media (min-width: 1200px) {
+
+}
+
+
+@media (min-width: 1400px) {
+
+}
+
+@media (min-width: 1600px) {
+
+}

@@ -1,0 +1,133 @@
+.half_img_half_text {
+    position: relative;
+}
+
+.z-1 {
+    z-index: 1;
+}
+
+.abs {
+    position: absolute;
+    top: 0;
+    left:0;
+    bottom:0;
+    right:0;
+    min-height:100%;
+    padding: 0px;
+    z-index: 0;
+  }
+
+  .abs .row {
+      position: relative;
+      height: 100%;
+  }
+
+  .abs .row .half_image {
+    height: 100%;
+    background-size: cover;
+    background-position: center;  
+}
+
+
+// All mobile scss
+
+@media (min-width: 0px) and (max-width: 991px) {
+
+    .abs .row .half_image {
+        background-image: none !important;
+       background: $white; 
+    }
+
+}
+
+
+
+/*---layout---*/
+
+
+.row.w-100 {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+
+
+// 2 column layout wrap
+
+.two_column_wrap {
+    position: relative;
+    display: flex;
+}
+
+
+.three_column_wrap {
+    position: relative;
+    display: flex;
+}
+
+
+
+// If no sidebar needed {
+    .no_aside {
+        width: 100%;
+    }
+
+
+
+// 3 column layout columns - Small then big then small
+
+
+.small_column_aside {
+    width: 25%;
+}
+
+.big_column_container {
+    // width: 60%;
+    width: 75%;
+}
+
+
+
+// 3 column layout columns - Small then big then small
+
+
+.small_column_left_aside {
+    width: 20%;
+}
+
+.big_column_middle_container {
+    // width: 60%;
+    width: 50%;
+}
+
+.small_column_right_aside {
+    width: 20%;
+}
+
+
+
+// Mobile --------------------------------------
+
+
+@media (min-width: 0px) and (max-width: 991px) {
+
+    .two_column_wrap {
+        position: relative;
+        display: block;
+    }
+
+    .three_column_wrap {
+        position: relative;
+        display: block;
+    }
+
+    .big_column_container, .small_column_aside, .big_column_right_container, .big_column_left_container, .big_column_middle_container, .small_column_right_aside, .small_column_left_aside, .small_column_right_aside {
+        width: 100%;  
+    }
+
+    .big_column_left_container, .small_column_left_aside, .big_column_middle_container {
+    margin-right: 0%;
+
+    }
+
+}
